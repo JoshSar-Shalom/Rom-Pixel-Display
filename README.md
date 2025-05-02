@@ -9,18 +9,18 @@ The main focus of this project was the display screen and the ROM chip (labeled 
 <p float="left">
   <img src="image/Display_Assembly.png" width="800"/>
 </p>
-Everything to the left of the ROM chip, although visually complex, is a binary counter that allows for the ROM chip to increment each instruction by 1 line, from here on I'm calling it the ROM iterator. The multiplexer labeled, "8 Bit 2-to-1 Multi" allows me to troubleshoot/reset the counter anytime I turn off its set input to zero, allowing for the integer 0 to be continuously inputted in the loop, effectively halting the ROM chip from executing its program.
+Everything to the left of the ROM chip, while it looks complex, is just a binary counter. This counter acts as a ROM iterator, incrementing the instruction line by one each cycle. The component labeled "8 Bit 2-to-1 Multi" is a multiplexer that lets me troubleshoot or reset the counter. When I set its control input to zero, it continuously feeds the value 0 into the loop. This effectively halts the ROM chip from running its program.
 
 # ROM
-The developer of the simulator provided a built-in 256 Bit ROM chip in his latest update as of May 2025. This chip is what inspired me to make this project and allows binary input that can output to any chip as needed. 
+The developer of the simulator added a built-in 256 × 16-bit ROM chip in his April 2025 update. This chip inspired the project and accepts binary input, which can be sent to any connected chip. 
 <br>
-In Sebastian Lague's most recent video he assembles this same 256 bit ROM module but strictly with logic gates. However, this project focuses on the ability to copy and paste binary code from the computer's clipboard.
+In his latest video, Sebastian Lague builds a similar 256 × 16-bit ROM entirely out of logic gates. However, this project focuses on using the computer’s clipboard to copy and paste binary code directly. 
 <br>
 <p float="left">
   <img src="image/ROM.png" width="600"/>
   <img src="image/Display.png" width="400"/>
 </p>
-After manual testing, I found that the pixel display addresses run left to right, bottom to top. With this information I came up with a layout for 
+After manual testing, I found that the pixel display addresses run left to right, bottom to top. With this information I decided to code the compiler to  
 
 # Modularity and Troubleshooting
 This is an example of how the 8 bit register chip is built from pre existing chips. This cycle of modularity repeats until it reaches the lowest level of logic gate in the software(NAND).
