@@ -2,7 +2,7 @@
 Using [Sebastian Lague's Digital Logic Sim](https://github.com/SebLague/Digital-Logic-Sim) and a compiler I programed in C, I'm able to display a 16x16 pixel pattern on his program with binary machine instructions.
 <br><br>
 The open canvas of the simulator allowed me to freely experiment and test with any set up I wanted to work with after watching the explanatory videos that the developer has been posting on his youtube channel.
-<br>
+<br><br>
 The main focus of this project was the display screen and the ROM chip (labeled in blue as "ROM 256x16").
 <br>
 
@@ -13,7 +13,7 @@ Everything to the left of the ROM chip, while it looks complex, is just a binary
 
 # ROM
 The developer of the simulator added a built-in 256 × 16-bit ROM chip in his April 2025 update. This chip inspired the project and accepts binary input, which can be sent to any connected chip. 
-<br>
+<br><br>
 In his latest video, Sebastian Lague builds a similar 256 × 16-bit ROM entirely out of logic gates. However, this project focuses on using the computer’s clipboard to copy and paste binary code directly. 
 <br>
 <p float="left">
