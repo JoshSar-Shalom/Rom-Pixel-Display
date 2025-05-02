@@ -9,7 +9,7 @@ The main focus of this project was the display screen and the ROM chip (labeled 
 <p float="left">
   <img src="image/Display_Assembly.png" width="800"/>
 </p>
-Everything to the left of the ROM chip, although visually complex, is a binary counter that allows for the ROM chip to increment each instruction by 1 line. The multiplexer labeled, "8 Bit 2-to-1 Multi" allows me to troubleshoot/reset the counter anytime I turn off its set input to zero, allowing for the integer 0 to be continuously inputted in the loop, effectively halting the ROM chip from executing its program.
+Everything to the left of the ROM chip, although visually complex, is a binary counter that allows for the ROM chip to increment each instruction by 1 line, from here on I'm calling it the ROM iterator. The multiplexer labeled, "8 Bit 2-to-1 Multi" allows me to troubleshoot/reset the counter anytime I turn off its set input to zero, allowing for the integer 0 to be continuously inputted in the loop, effectively halting the ROM chip from executing its program.
 
 # ROM
 The developer of the simulator provided a built-in 256 Bit ROM chip in his latest update as of May 2025. This chip is what inspired me to make this project and allows binary input that can output to any chip as needed. 
