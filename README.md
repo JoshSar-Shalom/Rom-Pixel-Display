@@ -9,7 +9,7 @@ The main focus of this project was the display screen and the ROM chip (labeled 
 <p float="left">
   <img src="image/Display_Assembly.png" width="800"/>
 </p>
-Everything to the left of the ROM chip is a binary counter. This counter acts as a ROM iterator, incrementing the instruction line by one each cycle. The component labeled "8 Bit 2-to-1 Multi" is a multiplexer that lets me troubleshoot or reset the counter. When I set its control input to zero, it continuously feeds the value 0 into the loop. This effectively halts the ROM chip from running its program.
+Everything to the left of the ROM chip is a binary counter. This counter acts as a ROM iterator, incrementing the instruction line by one each cycle. The component labeled "8 Bit 2-to-1 Multi" is a multiplexer that lets me troubleshoot or reset the counter.
 
 # ROM
 The developer of the simulator added a built-in 256 × 16-bit ROM chip in his April 2025 update. This chip inspired the project and accepts binary input, which can be sent to any connected chip. 
@@ -20,7 +20,7 @@ In his latest video, Sebastian Lague builds a similar 256 × 16-bit ROM entirely
   <img src="image/ROM.png" width="600"/>
   <img src="image/Display.png" width="400"/>
 </p>
-After manual testing, I found that the pixel display addresses run left to right, bottom to top. This means the address of the bottom-left pixel is 00000000, and the address of the top-right pixel is 11111111.
+I found that the pixel display addresses run left to right, bottom to top. This means the address of the bottom-left pixel is 00000000, and the address of the top-right pixel is 11111111.
 <br>
 <br>
 The 16-bit binary code is structured as follows: AAAAAAAA MMMM XXXX. The leftmost 8 bits (A) represent the address of the display, the next 4 bits (M) are used for opcode instructions, and the final 4 bits (X) are unused.
